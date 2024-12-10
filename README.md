@@ -1,0 +1,2 @@
+# sqli
+SQLi 'fuzz' list
