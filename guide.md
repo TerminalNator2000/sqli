@@ -61,7 +61,7 @@ Look for clues in the response that indicate successful injection.
 ---
 
 ### **7. WAF Detection and Bypasses**
-BigCommerce might have a Web Application Firewall (WAF). Test payloads with common evasion techniques:
+Most websites usually have a Web Application Firewall (WAF). Test payloads with common evasion techniques:
 - Encoding: `%27%20OR%201=1--`
 - Case manipulation: `' Or 1=1--`
 - Inline comments: `' OR 1/**/=/**/1--`
