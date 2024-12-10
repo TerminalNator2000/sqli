@@ -2,7 +2,10 @@
 
 
 
-# sqli
+# sqli guide repo
+
+We'll start with a 'Fuzz' list:
+
 SQLi 'fuzz' list
 
 A **SQLi fuzz list** is a set of payloads designed to test for SQL Injection vulnerabilities by injecting various SQL syntax patterns into an input field. These payloads attempt to exploit common weaknesses in SQL queries. Below is a categorized list of common SQL injection fuzz payloads:
